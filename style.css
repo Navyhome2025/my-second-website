@@ -1,41 +1,36 @@
-
-/* Page styling */
-body {
+body {    /* Centers page and sets font */
     font-family: Arial, sans-serif;
     width: 70%;
     margin: auto;
 }
 
-/* Navigation menu */
-#nav-menu ul {
+#nav-menu ul {    /* Removes navigation bullets */
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-#nav-menu li {
+#nav-menu li {    /* Lines up navigation links */
     float: left;
 }
 
-li {
+li {    /* spaceing around list items */
     padding: .5em 1em;
 }
 
-a {
+a {    /* link appearance */
     text-decoration: none;
     color: blue;
 }
 
-/* Main heading */
-h1 {
+h1 {    /* Styles page headings */
     background-color: lightgreen;
     margin-top: 1em;
     padding: 1rem;
     clear: left;
 }
 
-/* Image sizing */
-img {
+img {    /* Resizes image */
     max-width: 100%;
     height: auto;
 }
