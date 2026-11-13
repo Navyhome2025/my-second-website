@@ -90,18 +90,17 @@ figcaption {
     margin-top: 6px;
 }
 
-.image-container {
+.home-images {
     display: flex;
     gap: 15px;
     margin-top: 25px;
 }
 
-.image-container > div {
-    flex: 1;
-    min-width: 0;
+.home-images div {
+    width: 33.33%;
 }
 
-.image-container img {
+.home-images img {
     width: 100%;
     height: 180px;
     object-fit: cover;
@@ -142,11 +141,11 @@ figcaption {
         width: 92%;
     }
 
-    .image-container {
+    .home-images {
         flex-wrap: wrap;
     }
 
-    .image-container > div {
+    .home-images div {
         width: 48%;
     }
 
@@ -185,11 +184,15 @@ figcaption {
         margin: 12px auto;
     }
 
-    .image-container {
+    .home-images {
         display: block;
     }
 
-    .image-container img {
+    .home-images div {
+        width: 100%;
+    }
+
+    .home-images img {
         width: 100%;
         height: 180px;
         margin-bottom: 12px;
