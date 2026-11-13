@@ -29,13 +29,14 @@ body {
     padding: .5em 1em;
 }
 
-a {
-    color: blue;
+#nav-menu a {
+    color: white;
     text-decoration: none;
 }
 
-a:visited {
+a {
     color: blue;
+    text-decoration: none;
 }
 
 main {
