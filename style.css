@@ -20,14 +20,12 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 #nav-menu li {
-    float: none;
     padding: .5em 1em;
 }
 
@@ -112,12 +110,12 @@ img {
 
 .side-by-side p,
 .side-by-side div {
-    width: 50%;
+    width: calc(50% - 10px);
 }
 
 .side-image {
     display: block;
-    width: 50%;
+    width: calc(50% - 10px);
     height: auto;
     object-fit: contain;
 }
@@ -133,19 +131,25 @@ img {
 }
 
 .pass-layout > div {
-    width: 65%;
-    order: 1;
+    width: calc(65% - 10px);
 }
 
 .gamepasses-image {
     display: block;
-    width: 35%;
+    width: calc(35% - 10px);
     height: auto;
-    order: 2;
 }
 
 .pass-layout h2 {
+    display: inline;
     text-align: left;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.pass-layout h2::before {
+    content: "";
+    display: block;
 }
 
 footer {
