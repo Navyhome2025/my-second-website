@@ -1,37 +1,207 @@
-body {    /* Centers page and sets font */
+
+body {
     font-family: Arial, sans-serif;
-    font-size: 16px;   
-    width: 70%;
-    margin: auto;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    background-color: #8fc8e8;
 }
 
-#nav-menu ul {    /* Removes navigation bullets */
+.banner {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#nav-menu {
+    background-color: #245b91;
+}
+
+#nav-menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-#nav-menu li {    /* Lines up navigation links */
-    float: left;
+#nav-menu li {
+    padding: 0;
 }
 
-li {    /* spaceing around list items */
-    padding: .5em 1em;
-}
-
-a {    /* link appearance */
+#nav-menu a {
+    display: block;
+    color: white;
     text-decoration: none;
-    color: blue;
+    padding: 14px 18px;
 }
 
-h1 {    /* Styles page headings */
-    background-color: lightgreen;
-    margin-top: 1em;
-    padding: 1rem;
-    clear: left;
+#nav-menu a:hover {
+    background-color: #173d63;
 }
 
-img {    /* Resizes image */
-    max-width: 100%;
+main {
+    background-color: white;
+    width: 85%;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #245b91;
+    margin-top: 0;
+}
+
+h2 {
+    color: #245b91;
+    margin-top: 28px;
+}
+
+a {
+    color: #145b9b;
+}
+
+.side-by-side {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.side-by-side > p,
+.side-by-side > div,
+.side-by-side > figure {
+    flex: 1;
+    min-width: 0;
+    margin-top: 0;
+}
+
+.side-image {
+    width: 48%;
+    max-width: 430px;
     height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.side-by-side figure {
+    margin: 0;
+}
+
+.side-by-side figure .side-image {
+    width: 100%;
+}
+
+figcaption {
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.home-images {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.home-images img {
+    width: 33.33%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.map-image {
+    display: block;
+    width: 85%;
+    max-width: 850px;
+    height: auto;
+    margin: 15px auto;
+}
+
+.bloxbux-heading {
+    color: purple;
+}
+
+.gamepass-layout {
+    align-items: flex-start;
+}
+
+.gamepass-list {
+    padding-left: 22px;
+}
+
+.gamepass-list li {
+    margin-bottom: 14px;
+}
+
+.gamepasses-image {
+    width: 35%;
+    max-width: 350px;
+    height: auto;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        width: 92%;
+    }
+
+    .home-images {
+        flex-wrap: wrap;
+    }
+
+    .home-images img {
+        width: 48%;
+    }
+
+    .side-by-side {
+        gap: 15px;
+    }
+
+    .side-image {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #nav-menu ul {
+        display: block;
+    }
+
+    #nav-menu a {
+        text-align: center;
+    }
+
+    main {
+        width: 95%;
+        padding: 18px;
+    }
+
+    .side-by-side {
+        display: block;
+    }
+
+    .side-image,
+    .side-by-side figure .side-image,
+    .gamepasses-image {
+        width: 100%;
+        max-width: 100%;
+        margin: 12px auto;
+    }
+
+    .home-images {
+        display: block;
+    }
+
+    .home-images img {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 12px;
+    }
+
+    .map-image {
+        width: 100%;
+    }
 }
