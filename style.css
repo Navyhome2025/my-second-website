@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -20,11 +21,12 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #nav-menu li {
-    float: left;
     padding: .5em 1em;
 }
 
@@ -150,9 +152,7 @@ footer {
     }
 
     #nav-menu ul {
-        display: flex;
         flex-wrap: wrap;
-        justify-content: center;
     }
 }
 
