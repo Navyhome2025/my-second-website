@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -13,31 +12,21 @@ body {
     height: auto;
 }
 
-#nav-menu {
+nav {
     background-color: #245b91;
-}
-
-#nav-menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#nav-menu li {
-    padding: 0;
-}
-
-#nav-menu a {
+nav a {
     display: block;
     color: white;
     text-decoration: none;
     padding: 14px 18px;
 }
 
-#nav-menu a:hover {
+nav a:hover {
     background-color: #173d63;
 }
 
@@ -101,14 +90,19 @@ figcaption {
     margin-top: 6px;
 }
 
-.home-images {
+.image-container {
     display: flex;
     gap: 15px;
     margin-top: 25px;
 }
 
-.home-images img {
-    width: 33.33%;
+.image-container > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.image-container img {
+    width: 100%;
     height: 180px;
     object-fit: cover;
 }
@@ -148,11 +142,11 @@ figcaption {
         width: 92%;
     }
 
-    .home-images {
+    .image-container {
         flex-wrap: wrap;
     }
 
-    .home-images img {
+    .image-container > div {
         width: 48%;
     }
 
@@ -166,11 +160,11 @@ figcaption {
 }
 
 @media screen and (max-width: 550px) {
-    #nav-menu ul {
+    nav {
         display: block;
     }
 
-    #nav-menu a {
+    nav a {
         text-align: center;
     }
 
@@ -191,11 +185,11 @@ figcaption {
         margin: 12px auto;
     }
 
-    .home-images {
+    .image-container {
         display: block;
     }
 
-    .home-images img {
+    .image-container img {
         width: 100%;
         height: 180px;
         margin-bottom: 12px;
