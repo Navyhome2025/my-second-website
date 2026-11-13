@@ -46,6 +46,10 @@ main {
     box-sizing: border-box;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
 h1 {
     background-color: lightgreen;
     padding: 1rem;
@@ -74,12 +78,24 @@ img {
     object-fit: contain;
 }
 
+.map-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.map-section p {
+    width: 50%;
+    margin: 0;
+}
+
 .map-image {
     display: block;
-    width: 60%;
-    max-width: 500px;
+    width: 50%;
+    max-width: 350px;
     height: auto;
-    margin: 15px auto;
+    margin: 0;
 }
 
 footer {
@@ -105,5 +121,14 @@ footer {
 
     .roleplay-images img {
         width: 90%;
+    }
+
+    .map-section {
+        flex-direction: column;
+    }
+
+    .map-section p,
+    .map-image {
+        width: 100%;
     }
 }
