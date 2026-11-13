@@ -140,16 +140,10 @@ img {
     height: auto;
 }
 
-.pass-layout h2 {
-    display: inline;
-    text-align: left;
+.pass-name {
+    color: #2875a5;
     font-size: 1.2em;
-    margin: 0;
-}
-
-.pass-layout h2::before {
-    content: "";
-    display: block;
+    font-weight: bold;
 }
 
 footer {
