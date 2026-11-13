@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -21,11 +20,11 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    overflow: hidden;
 }
 
 #nav-menu li {
+    float: left;
     padding: .5em 1em;
 }
 
@@ -53,7 +52,9 @@ h1, h2 {
 
 h1 {
     background-color: lightgreen;
+    margin-top: 1em;
     padding: 1rem;
+    clear: left;
 }
 
 h2 {
@@ -66,38 +67,7 @@ img {
     height: auto;
 }
 
-.roleplay-images {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
-}
-
-.roleplay-images img {
-    width: 40%;
-    height: 200px;
-    object-fit: contain;
-}
-
-.map-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 20px;
-}
-
-.map-section p {
-    margin: 0;
-}
-
-.map-image {
-    display: block;
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    justify-self: center;
-}
-
+.roleplay-images,
 .building-images {
     display: flex;
     justify-content: center;
@@ -105,10 +75,29 @@ img {
     margin: 20px 0;
 }
 
+.roleplay-images img,
 .building-images img {
     width: 40%;
     height: 200px;
     object-fit: contain;
+}
+
+.map-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.map-section p {
+    width: calc(60% - 10px);
+    margin: 0;
+}
+
+.map-image {
+    display: block;
+    width: calc(40% - 10px);
+    max-width: 350px;
+    height: auto;
 }
 
 footer {
@@ -122,7 +111,9 @@ footer {
     }
 
     #nav-menu ul {
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -139,9 +130,10 @@ footer {
     }
 
     .map-section {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
+    .map-section p,
     .map-image {
         width: 100%;
     }
