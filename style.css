@@ -1,5 +1,4 @@
 
-/* Main page appearance */
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -7,14 +6,12 @@ body {
     margin: 0;
 }
 
-/* Banner image */
 .banner {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* Navigation menu */
 #nav-menu {
     background-color: #174b78;
 }
@@ -47,7 +44,6 @@ main a {
     text-decoration: none;
 }
 
-/* Main content area */
 main {
     background-color: white;
     width: 85%;
@@ -70,7 +66,6 @@ h2 {
     color: purple;
 }
 
-/* Images on homepage */
 .home-images {
     display: flex;
     gap: 1em;
@@ -83,7 +78,6 @@ h2 {
     object-fit: cover;
 }
 
-/* Text and image sections */
 .side-by-side {
     display: flex;
     align-items: center;
@@ -114,7 +108,6 @@ figcaption {
     margin-top: .5em;
 }
 
-/* Map image */
 .map-image {
     display: block;
     width: 100%;
@@ -123,7 +116,6 @@ figcaption {
     margin: 1em auto;
 }
 
-/* Game passes image and descriptions */
 .pass-layout {
     display: flex;
     align-items: flex-start;
@@ -136,14 +128,12 @@ figcaption {
     height: auto;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 1em;
     color: white;
 }
 
-/* Smaller screens */
 @media screen and (max-width: 800px) {
     main {
         width: 92%;
@@ -170,7 +160,6 @@ footer {
     }
 }
 
-/* Phone screens */
 @media screen and (max-width: 550px) {
     #nav-menu ul {
         flex-direction: column;
