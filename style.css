@@ -97,8 +97,19 @@ h2 {
     display: block;
     margin: auto;
 }
-
-figure {
+.building-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 1.5em 0;
+}
+.building-images img {
+    width: 45%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+}figure {
     margin: 0;
 }
 
@@ -178,8 +189,14 @@ footer {
     .side-image {
         max-width: 100%;
     }
+    
+    .building-images {
+        flex-direction: column;
+    }
 
-    main {
+    .building-images img {
+        width: 100%;
+    }    main {
         width: 95%;
         padding: 1em;
     }
