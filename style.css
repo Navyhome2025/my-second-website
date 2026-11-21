@@ -15,7 +15,7 @@ body {
 #nav-menu {
     background-color: #174b78;
 }
-
+/* Removes bullets, lines up the navigation links and adds flexbox */
 #nav-menu ul {
     list-style-type: none;
     margin: 0;
