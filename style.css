@@ -101,7 +101,7 @@ h2 {
 }
 
 .side-image {
-    width: 100%;    /* Alignment */
+    width: 100%;    /* Alignment and sizse*/
     max-width: 450px;
     height: auto;
     display: block;
@@ -114,7 +114,7 @@ h2 {
     gap: 2em;
     margin: 1.5em 0;
 }
-.building-images img {
+.building-images img {    /* formatting and size*/
     width: 45%;
     max-width: 450px;
     height: auto;
@@ -125,13 +125,13 @@ figure {
     margin: 0;
 }
 
-figcaption {
+figcaption {    /* font formatting and size*/
     font-size: 14px;
     text-align: center;
     margin-top: .5em;
 }
 
-.map-image {
+.map-image {    /* map image formatting and size*/
     display: block;
     width: 100%;
     max-width: 850px;
@@ -139,7 +139,7 @@ figcaption {
     margin: 1em auto;
 }
 
-.pass-layout {
+.pass-layout {    /* alignment and flexbox */
     display: flex;
     align-items: flex-start;
     gap: 2em;
