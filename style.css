@@ -86,7 +86,9 @@ h2 {
 
 .roleplay-images img {
     width: 100%;
-}.side-by-side {
+}
+
+.side-by-side {
     display: flex;
     align-items: center;
     gap: 2em;
